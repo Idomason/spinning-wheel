@@ -9,19 +9,15 @@
 body {
   background: url('mesh-gradient.png');
   background-position: top;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 500% 500%;
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: 'IBM Plex Sans', sans-serif;
   width: 100%;
-  height: 100%;
 }
 
 #header {
   width: 100%;
-  max-width: 95%;
+  /* max-width: 95%; */
   padding: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -91,6 +87,7 @@ body {
   border: 8px solid black;
   transition: all ease 5s;
   /* margin: 0 auto; */
+  overflow: hidden;
 }
 
 span {
@@ -234,6 +231,7 @@ span b {
 
   .bold-heading h1 {
     font-size: 64px;
+    color: rebeccapurple;
   }
 
   #wheel {
@@ -266,6 +264,7 @@ span b {
   .bold-heading h1 {
     font-size: 70px;
     text-align: center;
+    color: yellow;
   }
 
   .promo-rule {
@@ -281,6 +280,9 @@ span b {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .bold-heading h1 {
+    color: maroon;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -289,9 +291,10 @@ span b {
   }
 
   #wheel {
-    position: relative;
-    top: 20%;
     text-align: center;
-    /* margin-top: 10%; */
+  }
+
+  .bold-heading h1 {
+    color: burlywood;
   }
 }
